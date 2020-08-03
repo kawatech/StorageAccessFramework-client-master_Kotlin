@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    // xmlファイルで　android:onClick="startOpenExample"　と定義しているので直接ボタンと関数が関連付けられている
+
     fun startOpenExample(view: View) {
         val intent = Intent()
         intent.component = ComponentName(this, OpenExampleActivity::class.java)

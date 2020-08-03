@@ -25,7 +25,8 @@ class DeleteExampleActivity : AppCompatActivity() {
     private fun openFile() {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
             addCategory(Intent.CATEGORY_OPENABLE)
-            type = "image/*"
+         //   type = "image/*"
+            type = "*/*"                // kawa すべてのファイル
         }
 
         startActivityForResult(intent, READ_REQUEST_CODE)
